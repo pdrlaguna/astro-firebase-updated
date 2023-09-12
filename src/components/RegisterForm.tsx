@@ -53,14 +53,14 @@ export default function SignupForm() {
   return (
     <form class="grid grid-cols-1 gap-3 w-full" onSubmit={submit}>
       <div class="grid grid-cols-1 gap-2">
-        <label for="name" class="font-medium text-zinc-300 text-sm">
+        <label for="name" class="font-medium text-zinc-700 text-sm">
           Name
         </label>
         <input
           type="text"
           id="name"
           name="name"
-          class="rounded-md py-1 px-3 bg-zinc-800 text-zinc-300 border border-zinc-700 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:bg-zinc-900 focus:ring-opacity-60"
+          class="rounded-md py-1 px-3 border border-zinc-700 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-60"
         />
         <Show
           when={clientErrors()?.fieldErrors.name}
@@ -70,14 +70,14 @@ export default function SignupForm() {
         </Show>
       </div>
       <div class="grid grid-cols-1 gap-2">
-        <label for="email" class="font-medium text-zinc-300 text-sm">
+        <label for="email" class="font-medium text-zinc-700 text-sm">
           Email
         </label>
         <input
           type="text"
           id="email"
           name="email"
-          class="rounded-md py-1 px-3 bg-zinc-800 text-zinc-300 border border-zinc-700 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:bg-zinc-900 focus:ring-opacity-60"
+          class="rounded-md py-1 px-3 border border-zinc-700 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-60"
         />
         <Show
           when={clientErrors()?.fieldErrors.email}
@@ -87,14 +87,14 @@ export default function SignupForm() {
         </Show>
       </div>
       <div class="grid grid-cols-1 gap-2">
-        <label for="password" class="font-medium text-zinc-300 text-sm">
+        <label for="password" class="font-medium text-zinc-700 text-sm">
           Password
         </label>
         <input
           type="password"
           id="password"
           name="password"
-          class="rounded-md py-1 px-3 bg-zinc-800 text-zinc-300 border border-zinc-700 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:bg-zinc-900 focus:ring-opacity-60"
+          class="rounded-md py-1 px-3 border border-zinc-700 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-60"
         />
         <Show
           when={clientErrors()?.fieldErrors.password}
@@ -104,14 +104,14 @@ export default function SignupForm() {
         </Show>
       </div>
       <div class="grid grid-cols-1 gap-2">
-        <label for="confirmPassword" class="font-medium text-zinc-300 text-sm">
+        <label for="confirmPassword" class="font-medium text-zinc-700 text-sm">
           Confirm password
         </label>
         <input
           type="password"
           id="confirmPassword"
           name="confirmPassword"
-          class="rounded-md py-1 px-3 bg-zinc-800 text-zinc-300 border border-zinc-700 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:bg-zinc-900 focus:ring-opacity-60"
+          class="rounded-md py-1 px-3 border border-zinc-700 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-60"
         />
         <Show
           when={clientErrors()?.fieldErrors.confirmPassword}
