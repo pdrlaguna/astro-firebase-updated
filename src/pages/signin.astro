@@ -4,11 +4,14 @@ import LoginForm from "@components/LoginForm";
 import { getUser } from "@lib/utils";
 
 /* Get session cookie */
-const sessionCookie = Astro.cookies.get("session").value;
-if (sessionCookie) {
-  const user = await getUser(sessionCookie);
-  if (user) {
-    return Astro.redirect("/dashboard/", 302);
+const sessionCookieObj = Astro.cookies.get("session");
+if (sessionCookieObj) {
+  const sessionCookie = sessionCookieObj.value;
+  if (sessionCookie) {
+    const user = await getUser(sessionCookie);
+    if (user) {
+      return Astro.redirect("/dashboard/", 302);
+    }
   }
 }
 ---
